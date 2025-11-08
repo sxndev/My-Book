@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Book</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/vars.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/my-book-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>    
+      <section id="section-1">
+        <header id="header-section-1">
+          <div id="logo">
+            <img
+              src="./src/images/my-book-icon.png"
+              alt=""
+              id="my-book-logo"
+            /><a href="">My Book</a>
+          </div>
+          <nav id="nav-header-section-1">
+            <ul>
+              <li><a href="#books-section">Shop</a></li>
+              <li><a href="#footer-section">Contact</a></li>
+              <li><a href="#about-section" >About</a></li>
+              <li><a href="#section-2">Log In</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="content-section-1">
+          <div class="welcome-message">
+            <h2>
+              Read your favorite <br />
+              books with My Book
+            </h2>
+            <p>
+              Сhoose and order any book of your choice. <br />Assortment of more
+              than 35,000 items
+            </p>
+          </div>
+          <ul class="info">
+            <li class="content-info">
+              <div class="text">
+                <h2>Genre</h2>
+                <p>Choose the genre of the book</p>
+              </div>
+              <img
+                src="./src/images/book.png"
+                alt="icone de livro"
+                class="icon"
+              />
+            </li>
+            <li class="content-info">
+              <div class="text">
+                <h2>Price Range</h2>
+                <p>Choose the price range that suits you</p>
+              </div>
+              <img
+                src="./src/images/coins.png"
+                alt="Ícone de moedas"
+                class="icon"
+              />
+            </li>
+            <li class="content-info">
+              <div class="text">
+                <h2>Title</h2>
+                <p>Specify the title of the book you want</p>
+              </div>
+              <img
+                src="./src/images/book-and-pencil.png"
+                alt="Ícone de livro com caneta"
+                class="icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section-2">
+        <header class="header-section-2">
+          <h2>Why you should buy the book <br />from our service?</h2>
+        </header>
+        <div class="container-section-2">
+          <ul class="ul-section-2">
+            <li>
+              <div class="icon-section-2"><p>1</p></div>
+              <div class="text-section-2">
+                <h2>Popular works</h2>
+                <p>
+                  In our store you will find <br />
+                  the bestsellers of the book industry
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./src/images/money.png"
+                alt="Ícone de dinheiro"
+                class="icon-section-2"
+              />
+              <div class="text-section-2">
+                <h2>You support the author</h2>
+                <p>
+                  Buying books from us you <br />
+                  sponsor the authors of the works
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./src/images/thunderbolt.png"
+                alt="Ícone de raio"
+                class="icon-section-2"
+              />
+              <div class="text-section-2">
+                <h2>Fast and high quality delivery</h2>
+                <p>We deliver products as soon as possible</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="books-section">
+        <h2 class="collection-books-message">
+          Let’s see our collection of books!
+        </h2>
+
+        <ul class="genere-books">
+          <li>
+            <h2>Best seller</h2>
+          </li>
+          <li>
+            <h2>New works</h2>
+          </li>
+          <li>
+            <h2>Popular</h2>
+          </li>
+          <li>
+            <h2>Classic</h2>
+          </li>
+          <li>
+            <input
+              type="text"
+              id="search-box"
+              placeholder="Search other works"
+            />
+          </li>
+        </ul>
+        <ul class="collection-books">
+          <li id="book-1" class="books">
+            <img
+              src="./src/images/crossroads.png"
+              class="img-book"
+              alt="Crossroads book"
+            />
+            <div class="book-info">
+              <h2>
+                Crossroadsby <br />
+                Jonathan Franzen
+              </h2>
+              <p>genre: Fictional prose</p>
+              <p>page: 592</p>
+              <p>price: 15 $</p>
+              <div class="btn-add-to-list">Add to List</div>
+            </div>
+          </li>
+          <li id="book-2" class="books">
+            <img src="./src/images/great-circle.png" alt="" />
+            <div class="book-info">
+              <h2>
+                Great Circle <br />
+                by Maggie Shipstead
+              </h2>
+              <p>genre: novel</p>
+              <p>page: 608</p>
+              <p>price: 15 $</p>
+              <div class="btn-add-to-list">Add to List</div>
+            </div>
+          </li>
+          <li id="book-3" class="books">
+            <img src="./src/images/how-the-word-is-passed.png" alt="" />
+            <div class="book-info">
+              <h2>
+                How the Word Is Passed <br />
+                by Clint Smith
+              </h2>
+              <p>genre: Social novel</p>
+              <p>page: 352</p>
+              <p>price: 29$</p>
+              <div class="btn-add-to-list">Add to list</div>
+            </div>
+          </li>
+          <li id="book-4" class="books">
+            <img src="./src/images/let-me-tell-you-what-i-mean.png" alt="" />
+            <div class="book-info">
+              <h2>Let Me Tell You What I ... <br />by Joan Didion</h2>
+              <p>genre: Autobiography</p>
+              <p>page: 192</p>
+              <p>price: 19 $</p>
+              <div class="btn-add-to-list">Add to list</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="about-section">
+          <div class="about-text">
+            <h2>About
+              us
+            </h2>
+            <h3>   My book is a company designed to help
+ readers from all over the world learn 
+new interesting and useful information 
+through books. 
+    We allow you to purchase
+ licensed books and get them in your 
+hands as soon as possible. 
+    Choosing My Book, you choose the quality
+
+            </h3>
+          </div>
+          <div class="about-img">
+            <img src="./src/images/about-img.png" alt="Biblioteca" />
+          </div>
+      </section>
+    </main>
+    <footer id="footer-section">
+        <ul class="footer-container">
+          <li id="subscribe-section">
+            <a href="#section-1" id="return-to-top-btn">
+              <img
+              src="./src/images/my-book-icon.png"
+              alt=""
+              id="my-book-logo"
+              />  My Book
+            </a>
+            <h2>Subscribe</h2>
+            <p>Subscribe to our news letter</p>
+            <input type="email" placeholder="Email Adress" >
+          </li>
+          
+          <li class="footer-items" id="footer-item-2">
+            <h2>Adress</h2>
+            <p>80 Richmond Avenue,</p>
+            <p>San Franscisco, California, USA</p>
+            <ul id="social-medias">
+              <li>
+              <img src="./src/images/facebook-icon.png" alt="Facebook icon" class="social-media-icon">
+            </li>
+            <li>
+              <img src="./src/images/twitter.png" alt="Twitter icon" class="social-media-icon">
+            </li>
+            <li>
+              <img src="./src/images/instagram-icon.png" alt="Instagram" class="social-media-icon">
+            </li>
+            <li>
+              <img src="./src/images/linkedin-icon.png" alt="LinkedIn icon" class="social-media-icon">
+            </li>
+          </ul>
+        </li>
+        </li>
+        <li class="footer-items" id="footer-item-3">
+          <h2>Contact</h2>
+          <p>+ 1 909 8391 8346</p>
+          <p>mybook@gmail.com</p>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
