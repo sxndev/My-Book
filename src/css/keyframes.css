@@ -1,0 +1,18 @@
+@keyframes openMenu {
+    0%{
+        translate: 150px;
+    }
+
+    100%{
+        translate: 0;
+    }
+}
+@keyframes closeMenu {
+    0%{
+        translate: 0;
+    }
+    
+    100%{
+        translate: 150px;
+    }
+} 
