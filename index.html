@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./src/css/vars.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
-    <link rel="stylesheet" href="./src/css/keyframes.css" />
+    <link rel="stylesheet" href="./src/css/animations.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,7 @@
               src="./src/images/my-book-icon.png"
               alt=""
               id="my-book-logo"
-            /><a href="">My Book</a>
+            /><a href="#section-1">My Book</a>
           </div>
           <nav id="nav-header-section-1">
             <div id="open-menu-btn">
@@ -39,11 +39,12 @@
                 |||
               </span>
             </div>
-            <ul id="nav-list">
+            <ul id="nav-list"> 
               <li class="nav-itens"><a href="#books-section">Shop</a></li>
               <li class="nav-itens"><a href="#footer-section">Contact</a></li>
-              <li class="nav-itens"><a href="#about-section" >About</a></li>
-              <li class="nav-itens"><a href="#section-2">Log In</a></li>
+              <li class="nav-itens"><a href="#about-section">About</a></li>
+              <li class="nav-itens"><a href="#footer-section">Log In</a></li> 
+              <li class="nav-itens" id="close-btn">Close</li>
             </ul>
           </nav>
         </header>
@@ -59,7 +60,7 @@
             </p>
           </div>
           <ul class="info">
-            <li class="content-info">
+            <li class="content-info" > 
               <div class="text">
                 <h2>Genre</h2>
                 <p>Choose the genre of the book</p>
@@ -95,13 +96,14 @@
           </ul>
         </div>
       </section>
-      <section id="section-2">
-        <header class="header-section-2">
+
+      <section id="section-2" >
+        <div class="header-section-2">
           <h2>Why you should buy the book <br />from our service?</h2>
-        </header>
+        </div>
         <div class="container-section-2">
           <ul class="ul-section-2">
-            <li>
+            <li class="hidden">
               <div class="icon-section-2"><p>1</p></div>
               <div class="text-section-2">
                 <h2>Popular works</h2>
@@ -111,7 +113,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="hidden">
               <img
                 src="./src/images/money.png"
                 alt="Ícone de dinheiro"
@@ -120,12 +122,12 @@
               <div class="text-section-2">
                 <h2>You support the author</h2>
                 <p>
-                  Buying books from us you <br />
+                  Buying books from us you <br/>
                   sponsor the authors of the works
                 </p>
               </div>
             </li>
-            <li>
+            <li class="hidden">
               <img
                 src="./src/images/thunderbolt.png"
                 alt="Ícone de raio"
@@ -139,7 +141,8 @@
           </ul>
         </div>
       </section>
-      <section id="books-section">
+
+      <section id="books-section" >
         <h2 class="collection-books-message">
           Let’s see our collection of books!
         </h2>
@@ -166,7 +169,7 @@
           </li>
         </ul>
         <ul class="collection-books">
-          <li id="book-1" class="books">
+          <li id="book-1" class="books hidden">
             <img
               src="./src/images/crossroads.png"
               class="img-book"
@@ -183,7 +186,7 @@
               <div class="btn-add-to-list">Add to List</div>
             </div>
           </li>
-          <li id="book-2" class="books">
+          <li id="book-2" class="books hidden">
             <img src="./src/images/great-circle.png" alt="" />
             <div class="book-info">
               <h2>
@@ -196,7 +199,7 @@
               <div class="btn-add-to-list">Add to List</div>
             </div>
           </li>
-          <li id="book-3" class="books">
+          <li id="book-3" class="books hidden">
             <img src="./src/images/how-the-word-is-passed.png" alt="" />
             <div class="book-info">
               <h2>
@@ -209,7 +212,7 @@
               <div class="btn-add-to-list">Add to list</div>
             </div>
           </li>
-          <li id="book-4" class="books">
+          <li id="book-4" class="books hidden">
             <img src="./src/images/let-me-tell-you-what-i-mean.png" alt="" />
             <div class="book-info">
               <h2>Let Me Tell You What I ... <br />by Joan Didion</h2>
@@ -221,8 +224,9 @@
           </li>
         </ul>
       </section>
-      <section id="about-section">
-          <div class="about-text">
+
+      <section id="about-section" >
+          <div class="about-text" class="hidden">
             <h2>About
               us
             </h2>
@@ -233,16 +237,16 @@ through books.
     We allow you to purchase
  licensed books and get them in your 
 hands as soon as possible. 
-    Choosing My Book, you choose the quality
+  Choosing My Book, you choose the quality
 
             </h3>
           </div>
-          <div class="about-img">
+          <div class="about-img" class="hidden">
             <img src="./src/images/about-img.png" alt="Biblioteca" />
           </div>
       </section>
-    </main>
-    <footer id="footer-section">
+      
+      <div id="footer-section">
         <ul class="footer-container">
           <li id="subscribe-section" class="footer-items">
             <a href="#section-1" id="return-to-top-btn">
@@ -283,7 +287,8 @@ hands as soon as possible.
           <p>mybook@gmail.com</p>
         </li>
       </ul>
-    </footer>
+    </div>
+  </main>
     <script src="src/js/script.js"></script>
   </body>
 </html>
