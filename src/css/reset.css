@@ -12,3 +12,7 @@ a{
     cursor: pointer;
     color: var(--secondary-color);
 }
+
+img{
+    max-width: 100%;
+}
